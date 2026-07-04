@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4aeotdu65lya"
-path="res://.godot/imported/Adobe Express - file.png-4ab1dcdd2a2d8e288f4538fca38763db.ctex"
+uid="uid://kloqu0nnhanx"
+path="res://.godot/imported/Right Arrow.png-5fec8cf459d707360f37307810468290.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Adobe Express - file.png"
-dest_files=["res://.godot/imported/Adobe Express - file.png-4ab1dcdd2a2d8e288f4538fca38763db.ctex"]
+source_file="res://Assets/Right Arrow.png"
+dest_files=["res://.godot/imported/Right Arrow.png-5fec8cf459d707360f37307810468290.ctex"]
 
 [params]
 
