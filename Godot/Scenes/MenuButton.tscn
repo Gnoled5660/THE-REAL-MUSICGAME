@@ -1,36 +1,18 @@
 [gd_scene format=3 uid="uid://diyu8vur215yp"]
 
-[ext_resource type="Script" uid="uid://mcxfmc4b33h0" path="res://Scenes/menu_button.gd" id="1_h6npt"]
 [ext_resource type="FontFile" uid="uid://dqfpqnyi6btx8" path="res://Assets/ayaha-2-font/AyahaRegularDemowthswshes-7OLKK.ttf" id="1_x7vq8"]
-[ext_resource type="Texture2D" uid="uid://dmy4cr801uh5" path="res://Assets/Left Arrow.png" id="3_jgwjj"]
-[ext_resource type="Texture2D" uid="uid://kloqu0nnhanx" path="res://Assets/Right Arrow.png" id="4_ccwyx"]
 
 [node name="TextureButton" type="TextureButton" unique_id=506777637]
 custom_minimum_size = Vector2(0, 140)
-script = ExtResource("1_h6npt")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1045043799]
-custom_minimum_size = Vector2(1080, 100)
+custom_minimum_size = Vector2(0, 100)
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = -96.0
-offset_top = 200.0
-offset_right = 2178.0
-offset_bottom = 562.0
 grow_horizontal = 2
 theme_override_fonts/normal_font = ExtResource("1_x7vq8")
 theme_override_font_sizes/normal_font_size = 100
 bbcode_enabled = true
 text = "[center]Start Game"
 tab_size = 24
-
-[node name="LeftArrow" type="Sprite2D" parent="." unique_id=1993520640]
-position = Vector2(944.99994, 599)
-scale = Vector2(0.4529942, 0.47064134)
-texture = ExtResource("3_jgwjj")
-
-[node name="RightArrow" type="Sprite2D" parent="." unique_id=13691916]
-position = Vector2(748, 591)
-scale = Vector2(0.48905107, 0.4273608)
-texture = ExtResource("4_ccwyx")
