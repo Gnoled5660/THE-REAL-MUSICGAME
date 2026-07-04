@@ -1,9 +1,62 @@
 [gd_scene format=3 uid="uid://mqs5571jr1ya"]
 
-[node name="Control" type="Control" unique_id=1608058765]
-layout_mode = 3
+[ext_resource type="FontFile" uid="uid://dqfpqnyi6btx8" path="res://Assets/ayaha-2-font/AyahaRegularDemowthswshes-7OLKK.ttf" id="1_853f1"]
+[ext_resource type="PackedScene" uid="uid://diyu8vur215yp" path="res://Scenes/MenuButton.tscn" id="2_8saeu"]
+
+[node name="MainMenu" type="Node" unique_id=1931296387]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=265768055]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer" unique_id=7709631]
+custom_minimum_size = Vector2(0, 540)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/CenterContainer" unique_id=1301137547]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_853f1")
+theme_override_font_sizes/font_size = 200
+text = "The Last MusicGame"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer" unique_id=900142942]
+custom_minimum_size = Vector2(0, 324)
+layout_mode = 2
+
+[node name="TextureButton" parent="VBoxContainer/VBoxContainer" unique_id=506777637 instance=ExtResource("2_8saeu")]
+layout_mode = 2
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/VBoxContainer" unique_id=460451381]
+custom_minimum_size = Vector2(0, 140)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/VBoxContainer/TextureButton2" unique_id=2083697927]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_853f1")
+theme_override_font_sizes/normal_font_size = 100
+bbcode_enabled = true
+text = "[center]How to Play"
+tab_size = 24
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/VBoxContainer" unique_id=198641152]
+custom_minimum_size = Vector2(0, 140)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/VBoxContainer/TextureButton3" unique_id=1656250165]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_853f1")
+theme_override_font_sizes/normal_font_size = 100
+bbcode_enabled = true
+text = "[center]Settings"
+tab_size = 24

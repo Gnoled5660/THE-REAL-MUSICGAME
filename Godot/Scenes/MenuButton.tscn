@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://diyu8vur215yp"]
+
+[ext_resource type="FontFile" uid="uid://dqfpqnyi6btx8" path="res://Assets/ayaha-2-font/AyahaRegularDemowthswshes-7OLKK.ttf" id="1_x7vq8"]
+
+[node name="TextureButton" type="TextureButton" unique_id=506777637]
+custom_minimum_size = Vector2(0, 140)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1045043799]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_x7vq8")
+theme_override_font_sizes/normal_font_size = 100
+bbcode_enabled = true
+text = "[center]Start Game"
+tab_size = 24
