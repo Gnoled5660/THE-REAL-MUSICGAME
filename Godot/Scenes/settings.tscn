@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bua45jcs41sld"]
+
+[ext_resource type="Script" uid="uid://c8q5a0kntarn5" path="res://Scenes/settings.gd" id="1_4geyq"]
+[ext_resource type="FontFile" uid="uid://cg2aegc4k2mgd" path="res://Assets/minecraft/Minecraft.ttf" id="2_i44u3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhmql"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aaqfp"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="Control" type="Control" unique_id=1937390745]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4geyq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1599924913]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=929473118]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_i44u3")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhmql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_aaqfp")
+text = "Back
+"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_back_pressed"]
