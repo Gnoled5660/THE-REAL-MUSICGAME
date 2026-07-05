@@ -60,7 +60,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="tiles" type="Area2D" unique_id=1468570214]
+[node name="tiles" type="Node2D" unique_id=360226192]
 script = ExtResource("1_vra4g")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1107887499]
