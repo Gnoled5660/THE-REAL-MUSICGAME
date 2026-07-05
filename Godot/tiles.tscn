@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bdyxmw38t5wde"]
+
+[ext_resource type="Script" uid="uid://cqvcm4bvmcyg4" path="res://tiles.gd" id="1_vra4g"]
+[ext_resource type="Texture2D" uid="uid://fqiqvmohydt2" path="res://Assets/down.png" id="2_xlp04"]
+[ext_resource type="Texture2D" uid="uid://cgibov4l24sv0" path="res://Assets/left.png" id="3_341ea"]
+[ext_resource type="Texture2D" uid="uid://7iudsuwucwx0" path="res://Assets/right.png" id="4_srh3t"]
+[ext_resource type="Texture2D" uid="uid://cluxqpmbyi1vt" path="res://Assets/up.png" id="5_7osof"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rnsht"]
+size = Vector2(289.875, 196.25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1754"]
+atlas = ExtResource("2_xlp04")
+region = Rect2(0, 0, 1000, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_endm6"]
+atlas = ExtResource("3_341ea")
+region = Rect2(0, 0, 1000, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6e3qa"]
+atlas = ExtResource("4_srh3t")
+region = Rect2(0, 0, 1414, 2000)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w18sb"]
+atlas = ExtResource("5_7osof")
+region = Rect2(0, 0, 1414, 2000)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8mo23"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1754")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_endm6")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6e3qa")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w18sb")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}]
+
+[node name="tiles" type="Area2D" unique_id=1468570214]
+script = ExtResource("1_vra4g")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1107887499]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=995309433]
+position = Vector2(77.0625, 29.875)
+shape = SubResource("RectangleShape2D_rnsht")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D" unique_id=1520833843]
+position = Vector2(33, 12.999998)
+scale = Vector2(0.22277227, 0.21200001)
+sprite_frames = SubResource("SpriteFrames_8mo23")
+animation = &"4"
