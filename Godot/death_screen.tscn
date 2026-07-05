@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://c0ulcb1is11u4"]
+
+[ext_resource type="Script" uid="uid://birqpbxqldkk8" path="res://death_screen.gd" id="1_6bi5g"]
+[ext_resource type="Texture2D" uid="uid://cwuatrbv0v05p" path="res://Assets/pixil-frame-0_6 - Copy.png" id="2_y0ggs"]
+[ext_resource type="FontFile" uid="uid://cg2aegc4k2mgd" path="res://Assets/minecraft/Minecraft.ttf" id="3_hhlqb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f562y"]
+texture = ExtResource("2_y0ggs")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6bi5g"]
+bg_color = Color(0.91, 0.73892003, 0.48229998, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y0ggs"]
+bg_color = Color(0.2, 0.083333336, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 0, 0.016666412, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hhlqb"]
+bg_color = Color(0.2, 0.083333336, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 0, 0.016666412, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="deathScreen" type="Control" unique_id=59648725]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6bi5g")
+
+[node name="Panel" type="Panel" parent="." unique_id=1713753476]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_f562y")
+
+[node name="Label" type="Label" parent="." unique_id=1450786936]
+layout_mode = 0
+offset_left = 513.0
+offset_top = 210.0
+offset_right = 1465.0
+offset_bottom = 359.0
+theme_override_fonts/font = ExtResource("3_hhlqb")
+theme_override_font_sizes/font_size = 200
+text = "dsaf"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1858104863]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 475.0
+offset_top = 713.0
+offset_right = -417.0
+offset_bottom = -117.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="homeButton" type="Button" parent="VBoxContainer" unique_id=2055613604]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_hhlqb")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_6bi5g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y0ggs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hhlqb")
+text = "Back to Main Menu
+"
+
+[connection signal="pressed" from="VBoxContainer/homeButton" to="." method="_on_home_button_pressed"]

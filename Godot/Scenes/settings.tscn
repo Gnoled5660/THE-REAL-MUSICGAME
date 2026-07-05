@@ -4,9 +4,8 @@
 [ext_resource type="FontFile" uid="uid://cg2aegc4k2mgd" path="res://Assets/minecraft/Minecraft.ttf" id="2_i44u3"]
 [ext_resource type="Texture2D" uid="uid://cwuatrbv0v05p" path="res://Assets/pixil-frame-0_6 - Copy.png" id="2_lhmql"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aaqfp"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lhmql"]
 texture = ExtResource("2_lhmql")
-modulate_color = Color(0.7008403, 0.7008398, 0.7008401, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i44u3"]
 bg_color = Color(0.91, 0.73892003, 0.48229998, 1)
@@ -45,7 +44,7 @@ corner_radius_bottom_right = 50
 corner_radius_bottom_left = 50
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j2dne"]
-bg_color = Color(0.73043716, 0.55404955, 0.27929598, 1)
+bg_color = Color(0.9098039, 0.7372549, 0.48235294, 1)
 border_width_left = 10
 border_width_top = 10
 border_width_right = 10
@@ -72,7 +71,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_aaqfp")
+theme_override_styles/panel = SubResource("StyleBoxTexture_lhmql")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1599924913]
 layout_mode = 1
@@ -109,11 +108,12 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = 409.0
-offset_top = -185.0
+offset_top = -176.0
 offset_right = -443.0
 offset_bottom = 84.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_selected_color = Color(0.81, 0.405, 0, 0)
 theme_override_fonts/font = ExtResource("2_i44u3")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_j2dne")
